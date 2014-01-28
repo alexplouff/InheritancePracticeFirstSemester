@@ -10,6 +10,23 @@ package my.concrete;
  *
  * @author Alex
  */
-public class HourlyEmployee {
+public class HourlyEmployee extends Employee {
+
+    private double hourlyPayRate;
+    
+    public HourlyEmployee(String firstName, String lastName, String position, int age, double hourlyPayRate) {
+        super(firstName, lastName, position, age);
+    }
+
+    public void setHourlyPayRate(double hourlyPayRate) {
+        this.hourlyPayRate = hourlyPayRate;
+    }
+
+    public double getHourlyPayRate() {
+        return hourlyPayRate;
+    }
+    
+    
+    
     
 }
