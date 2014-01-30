@@ -10,10 +10,8 @@ package myinterface;
  *
  * @author Alex
  */
-public interface EmployeeInterface {
-    
-    
-    
-    
+public abstract class SalariedCommisionEmployeeInterface extends SalariedEmployeeInterface{
+   
+    public abstract void getMonthlyPay();
     
 }

@@ -26,7 +26,7 @@ public class SalariedEmployee extends Employee {
         return salary;
     }
     
-    public double monthlySalary(){
+    public double getMonthlySalary(){
         return salary / 12;
     }
     
