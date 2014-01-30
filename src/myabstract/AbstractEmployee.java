@@ -13,7 +13,7 @@ package myabstract;
 public abstract class AbstractEmployee {
     
     private String firstName, lastName, position;
-    private int age;
+    private int age, some;
     
     
     public AbstractEmployee(){
