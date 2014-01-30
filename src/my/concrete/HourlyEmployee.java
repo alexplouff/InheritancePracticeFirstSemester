@@ -26,6 +26,14 @@ public class HourlyEmployee extends Employee {
         return hourlyPayRate;
     }
     
+    public double getBiWeeklyPayRate(){
+        return hourlyPayRate * 80;
+    }
+    
+    public double getMonthlyPay(){
+        return hourlyPayRate * 160; //* 160 is total hours for full time employee per month*//
+}
+    
     
     
     

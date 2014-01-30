@@ -10,6 +10,6 @@ package myinterface;
  *
  * @author Alex
  */
-public interface EmployeeInterface {
+public class EmployeeInterface {
     
 }

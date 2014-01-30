@@ -12,8 +12,7 @@ package my.concrete;
  */
 public class SalaryPlusCommissionEmployee extends SalariedEmployee{
 
-    private double commision;
-    private double total;
+    private double commision, salary;
     
     public SalaryPlusCommissionEmployee(String firstName, String lastName, String position, int age, double salary, double commision, double total) {
         super(firstName, lastName, position, age, salary);
@@ -23,18 +22,22 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
         this.commision = commision;
     }
 
-    public void setTotal(double total) {
-        this.total = total;
+    @Override
+    public void setSalary(double salary){
+        this.salary = salary;
     }
 
     public double getCommision() {
         return commision;
     }
 
-    public double getTotal() {
-        return total;
+    @Override
+    public double getSalary() {
+        return salary;
     }
     
-    
+    public double getMonthlyPay(){
+        return salary + commision;
+}
     
 }
