@@ -12,4 +12,17 @@ package myabstract;
  */
 public class AbstractSalariedEmployee {
     
+    double salary;
+    
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+    
+    public double monthlySalary(){
+        return salary / 12;
+    }
 }

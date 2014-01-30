@@ -12,4 +12,25 @@ package myabstract;
  */
 public class AbstractSalariedCommisionedEmployee {
     
+    double commision, salary;
+    
+    public void setCommision(double commision) {
+        this.commision = commision;
+    }
+
+    public void setSalary(double salary){
+        this.salary = salary;
+    }
+
+    public double getCommision() {
+        return commision;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+    
+    public double getMonthlyPay(){
+        return salary + commision;
+    }
 }
