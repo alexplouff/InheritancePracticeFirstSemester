@@ -17,17 +17,19 @@ public class AbstractHourlyEmployee extends AbstractEmployee {
     public void setHourlyPayRate(double hourlyPayRate) {
         this.hourlyPayRate = hourlyPayRate;
     }
-
-    public double getHourlyPayRate() {
-        return hourlyPayRate;
+    
+    @Override
+    public double biWeeklyEarnings(){
+        return ( hourlyPayRate * 80);
     }
     
-    public double getBiWeeklyPayRate(){
-        return hourlyPayRate * 80; //* 80 is total hours for full time epmployee per 2 weeks*//
+    @Override
+    public double monthlyEarnings (){
+        return ( hourlyPayRate * 160 );
     }
     
-    public double getMonthlyPay(){
-        return hourlyPayRate * 160; //* 160 is total hours for full time employee per month*//
+    @Override
+    public double yearlyEarnings(){
+        return ( hourlyPayRate * 160 ) * 12; // takes monthly earnings (160) and muiltiplies by 12 for number of months
     }
-    
 }

@@ -13,23 +13,59 @@ package myabstract;
 public abstract class AbstractEmployee {
     
     private String firstName, lastName, position;
-    private int age, some;
+    private int age;
+
     
+    //Setters
     
-    public AbstractEmployee(){
-       
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    //Getters
+    
+    public String getFirstName(){
+        if(firstName.length() < 1){
+            System.out.println("First name can not be less than 2 characters");
+        }
+        return firstName;
     }
     
-    public String getFullName(){
-        return firstName + " " + lastName;
+    public String getLastName(){
+        if(lastName.length() < 1){
+            System.out.println("Last name can not be less than 2 characters");
+        }
+        return lastName;
     }
     
     public String getPosition(){
+        
         return position;
     }
     
     public int getAge(){
+        if(age < 18 || age < 65){
+            System.out.println("Age is too young/old");
+        }
         return age;
     }
+    
+    //Abstract Methods
+    
+    public abstract double biWeeklyEarnings();
+    public abstract double monthlyEarnings();
+    public abstract double yearlyEarnings();
     
 }

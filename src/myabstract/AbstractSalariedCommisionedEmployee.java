@@ -10,27 +10,48 @@ package myabstract;
  *
  * @author Alex
  */
-public class AbstractSalariedCommisionedEmployee {
+public class AbstractSalariedCommisionedEmployee extends AbstractSalariedEmployee{
     
-    double commision, salary;
-    
-    public void setCommision(double commision) {
-        this.commision = commision;
+    double currentCommision, monthlyCommision, totalYearCommision;
+
+    public void setCurrentCommision(double currentCommision) {
+        this.currentCommision = currentCommision;
     }
 
-    public void setSalary(double salary){
-        this.salary = salary;
+    public void setMonthlyCommision(double monthlyCommision) {
+        this.monthlyCommision = monthlyCommision;
     }
 
-    public double getCommision() {
-        return commision;
-    }
-
-    public double getSalary() {
-        return salary;
+    public void setTotalYearCommision(double totalYearCommision) {
+        this.totalYearCommision = totalYearCommision;
     }
     
-    public double getMonthlyPay(){
-        return salary + commision;
+    public double getCurrentCommision(){
+        return currentCommision;
+    }
+
+    public double getMonthlyCommision() {
+        return monthlyCommision;
+    }
+
+    public double getTotalYearCommision() {
+        return totalYearCommision;
+    }
+    
+    
+
+    @Override
+    public double biWeeklyEarnings(){
+        return (( salary / 12) / 2) + currentCommision;
+    }
+    
+    @Override
+    public double monthlyEarnings(){
+        return ( salary / 12) + monthlyCommision;
+    }
+    
+    @Override
+    public double yearlyEarnings(){
+        return ( salary + totalYearCommision);
     }
 }

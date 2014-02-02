@@ -10,7 +10,7 @@ package myabstract;
  *
  * @author Alex
  */
-public class AbstractSalariedEmployee {
+public class AbstractSalariedEmployee extends AbstractEmployee{
     
     double salary;
     
@@ -18,11 +18,19 @@ public class AbstractSalariedEmployee {
         this.salary = salary;
     }
 
-    public double getSalary() {
+    @Override
+    public double biWeeklyEarnings(){
+        return ( salary / 12) / 2;
+    }
+    
+    @Override
+    public double monthlyEarnings(){
+        return ( salary / 12);
+    }
+    
+    @Override
+    public double yearlyEarnings(){
         return salary;
     }
     
-    public double monthlySalary(){
-        return salary / 12;
-    }
 }
