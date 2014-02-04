@@ -12,16 +12,18 @@ package myinterface;
  */
 public interface EmployeeInterface {
     
-    public abstract String firstName(String firstName);
+    public abstract void setFirstName(String firstName);
     
-    public abstract String lastName(String lastName);
+    public abstract String getFirstName();
     
-    public abstract String position(String position);
+    public abstract void setLastName(String lastName);
     
-    public abstract double biWeeklyEarnings();
+    public abstract String getLastName();
     
-    public abstract double monthlyEarnings();
-
-    public abstract double yearlyEarnings();
+    public abstract void setPosition(String position);
+    
+    public abstract String getPosition();
+    
+    public abstract double getBiWeeklyEarnings();
     
 }
