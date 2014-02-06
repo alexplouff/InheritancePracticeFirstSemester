@@ -38,7 +38,9 @@ public class StartUp {
         SalariedCommisionEmployee emp3 = new SalariedCommisionEmployee();
         emp3.setFirstName("Man");
         emp3.setLastName("Can");
-        emp3.setCommision(.10);
+        emp3.setCommision(400);
+        emp3.setSalary(80000);
+        
         double salaryAndCommsion = emp3.getBiWeeklyEarnings() * emp3.getCommision();
         
         System.out.println("The bi-weekly-earnings of " + emp3.getFirstName() + " " + emp3.getLastName() +

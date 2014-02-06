@@ -14,19 +14,19 @@ public class HourlyEmployee extends Employee {
 
     private double hourlyPayRate;
 
-    public void setHourlyPayRate(double hourlyPayRate) {
+    public final void setHourlyPayRate(double hourlyPayRate) {
         this.hourlyPayRate = hourlyPayRate;
     }
 
-    public double getHourlyPayRate() {
+    public final double getHourlyPayRate() {
         return hourlyPayRate;
     }
     
-    public double getBiWeeklyPayRate(){
+    public final double getBiWeeklyPayRate(){
         return hourlyPayRate * 80;
     }
     
-    public double getMonthlyPay(){
+    public final double getMonthlyPay(){
         return hourlyPayRate * 160; //* 160 is total hours for full time employee per month*//
     }
     

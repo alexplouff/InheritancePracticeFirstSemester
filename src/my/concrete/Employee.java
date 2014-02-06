@@ -17,35 +17,35 @@ public class Employee {
     
 
 
-    public void setFirstName(String firstName) {
+    public final void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public void setLastName(String lastName) {
+    public final void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public void setPosition(String position) {
+    public final void setPosition(String position) {
         this.position = position;
     }
 
-    public void setAge(int age) {
+    public final void setAge(int age) {
         this.age = age;
     }
 
-    public String getFirstName() {
+    public final String getFirstName() {
         return firstName;
     }
 
-    public String getLastName() {
+    public final String getLastName() {
         return lastName;
     }
 
-    public String getPosition() {
+    public final String getPosition() {
         return position;
     }
 
-    public int getAge() {
+    public final int getAge() {
         return age;
     }
     

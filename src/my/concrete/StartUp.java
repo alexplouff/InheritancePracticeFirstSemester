@@ -15,7 +15,11 @@ public class StartUp extends Employee{
     
     public static void main(String[] args) {
         
-        HourlyEmployee hourly_Emp1 = new HourlyEmployee();        
+        HourlyEmployee hourly_Emp1 = new HourlyEmployee();     
+        
+        SalariedEmployee salEmp = new SalariedEmployee();
+        
+        SalaryPlusCommissionEmployee salComEmp = new SalaryPlusCommissionEmployee();
        
         
         hourly_Emp1.setFirstName("Alex");
@@ -29,10 +33,7 @@ public class StartUp extends Employee{
                            + "Position: " + hourly_Emp1.getPosition() + "\n"
                            + "Wage: " + hourly_Emp1.getHourlyPayRate() + "\n"
                            + "Bi-Weekly Pay: " + hourly_Emp1.getBiWeeklyPayRate() + "\n \n");
-       
- 
-       
-        SalariedEmployee salEmp = new SalariedEmployee();
+      
 
         
         salEmp.setFirstName("Alex Plouff");
@@ -45,11 +46,8 @@ public class StartUp extends Employee{
                          + "Position: " + salEmp.getPosition() + "\n"
                          + "Salary: " + + salEmp.getSalary() + "\n" 
                          + "Monthly Salary: " + salEmp.getMonthlySalary() + "\n \n");
+
         
-        System.out.println();
-        System.out.println();
-        
-        SalaryPlusCommissionEmployee salComEmp = new SalaryPlusCommissionEmployee();
         
         salComEmp.setFirstName("Alex");
         salComEmp.setLastName("Plouff");

@@ -19,6 +19,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
         this.commision = commision;
     }
 
+    
     @Override
     public void setSalary(double salary){
         this.salary = salary;

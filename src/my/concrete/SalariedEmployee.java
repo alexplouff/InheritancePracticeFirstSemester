@@ -22,7 +22,7 @@ public class SalariedEmployee extends Employee {
         return salary;
     }
     
-    public double getMonthlySalary(){
+    public final double getMonthlySalary(){
         return salary / 12;
     }
     
