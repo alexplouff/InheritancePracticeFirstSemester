@@ -13,10 +13,6 @@ package my.concrete;
 public class HourlyEmployee extends Employee {
 
     private double hourlyPayRate;
-    
-    public HourlyEmployee(String firstName, String lastName, String position, int age, double hourlyPayRate) {
-        super(firstName, lastName, position, age);
-    }
 
     public void setHourlyPayRate(double hourlyPayRate) {
         this.hourlyPayRate = hourlyPayRate;
@@ -32,9 +28,7 @@ public class HourlyEmployee extends Employee {
     
     public double getMonthlyPay(){
         return hourlyPayRate * 160; //* 160 is total hours for full time employee per month*//
-}
-    
-    
+    }
     
     
 }

@@ -14,10 +14,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
 
     private double commision, salary;
     
-    public SalaryPlusCommissionEmployee(String firstName, String lastName, String position, int age, double salary, double commision, double total) {
-        super(firstName, lastName, position, age, salary);
-    }
-
+    
     public void setCommision(double commision) {
         this.commision = commision;
     }

@@ -14,13 +14,8 @@ public class Employee {
     
     private String firstName, lastName, position;
     private int age;
+    
 
-    public Employee(String firstName, String lastName, String position, int age) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.position = position;
-        this.age = age;
-    }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -53,6 +48,5 @@ public class Employee {
     public int getAge() {
         return age;
     }
-    
     
 }
